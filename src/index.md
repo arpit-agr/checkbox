@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Purchase Form
 layout: "layouts/home.html"
 ---
 

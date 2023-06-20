@@ -1,0 +1,74 @@
+body {
+	display: grid;
+	place-items: center;
+	padding: 1em;
+	font-family: system-ui, sans-serif;
+}
+
+main {
+	display: grid;
+	place-items: center;
+}
+
+h1 {
+	font-size: 3.7rem;
+	line-height: 1.1;
+	font-variation-settings: "wdth" 50;
+	text-transform: uppercase;
+}
+
+p {
+	max-inline-size: 45ch;
+	text-align: center;
+	text-wrap: balance;
+}
+
+form,
+form > *,
+input:not([type="checkbox"]) {
+	inline-size: 100%;
+}
+
+label {
+	display: block;
+}
+
+input,
+fieldset,
+.btn {
+	border: 1px solid;
+	border-radius: 3px;
+}
+
+fieldset {
+	padding: 1em;
+}
+
+input:not([type="checkbox"]),
+.btn {
+	padding: 0.25lh 1ch;
+}
+
+.btn {
+	background-color: canvastext;
+	color: canvas;
+	text-align: center;
+	transition: 200ms ease;
+}
+
+.btn:where(:hover, :focus) {
+	background-color: initial;
+	color: initial;
+}
+
+::placeholder {
+	font-size: 0.875rem; /* 14px */
+}
+
+:where(.stack) {
+	display: flex;
+	flex-direction: column;
+	gap: var(--stack-gap, 1em);
+	justify-content: var(--stack-vertical-alignment, flex-start);
+	align-items: var(--stack-horizontal-alignment, flex-start);
+}
