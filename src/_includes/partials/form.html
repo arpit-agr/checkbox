@@ -56,75 +56,7 @@
       required
     >
   </div>
-  <fieldset>
-    <legend>Choose the brand</legend>
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          id="kleenal"
-          name="brand"
-          value="Kleenal"
-        />
-        Kleenal
-      </label>
-    </div>
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          id="three-m"
-          name="brand"
-          value="3M"
-        />
-        3M
-      </label>
-    </div>
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          id="time-techno"
-          name="brand"
-          value="Time Techno"
-        />
-        Time Techno
-      </label>
-    </div>
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          id="saraya-mystair"
-          name="brand"
-          value="Saraya Mystair"
-        />
-        Saraya Mystair
-      </label>
-    </div>
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          id="ap"
-          name="brand"
-          value="AP"
-        />
-        AP
-      </label>
-    </div>
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          id="kimberly-clark"
-          name="brand"
-          value="Kimberly-Clark"
-        />
-        Kimberly-Clark
-      </label>
-    </div>
-  </fieldset>
+  {% include "partials/fieldset.html" %}
   <div hidden>
     <label>
       Don’t fill this out if you're human: 

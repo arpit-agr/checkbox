@@ -1,13 +1,8 @@
 body {
 	display: grid;
-	place-items: center;
+	justify-content: center;
 	padding: 1em;
 	font-family: system-ui, sans-serif;
-}
-
-main {
-	display: grid;
-	place-items: center;
 }
 
 h1 {
@@ -19,7 +14,6 @@ h1 {
 
 p {
 	max-inline-size: 45ch;
-	text-align: center;
 	text-wrap: balance;
 }
 
@@ -41,12 +35,21 @@ fieldset,
 }
 
 fieldset {
+	--flow-space: 0.5em;
 	padding: 1em;
 }
 
 input:not([type="checkbox"]),
 .btn {
 	padding: 0.25lh 1ch;
+}
+
+summary {
+	cursor: pointer;
+}
+
+summary ~ div {
+	margin-inline-start: 1ch;
 }
 
 .btn {
@@ -71,4 +74,8 @@ input:not([type="checkbox"]),
 	gap: var(--stack-gap, 1em);
 	justify-content: var(--stack-vertical-alignment, flex-start);
 	align-items: var(--stack-horizontal-alignment, flex-start);
+}
+
+.flow > * + * {
+	margin-block-start: var(--flow-space, 1em);
 }
